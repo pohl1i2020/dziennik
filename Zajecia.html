@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>dziennik</title>
+		<link rel="stylesheet" href="main.css" />
+		<script src="Zajecia.js" defer></script>
+	</head>
+	<body>
+		<header><h1>DZIENNIK PRAKTYKI ZAWODOWEJ</h1></header>
+		<section id="dziennik">
+			<a href="glowna.html"><button id="home">Home</button></a>
+			<a href="Zajecia.html"
+				><button id="dziennik-zajec">Dziennik zajęć</button></a
+			>
+			<a href="Ocena.html"><button id="ocena">Podsumowanie</button></a>
+		</section>
+		<form action="#">
+			<div id="dziennikzajec">
+			<fieldset>
+				<legend>Informacje o Praktyce</legend>
+				<div class="dane_praktyk">
+				<label for="data"
+					>Data zajęć:
+					<input type="date" id="data" />
+				</label>
+				Temat zajęć:
+				<select name="tematy" id="tematy">
+					<optgroup label="Moduł wstępny">
+					<option
+						value="Czynności wstępne i szkolenia, struktura i organizacja pracy
+					informatyków"
+					>
+						Czynności wstępne i szkolenia, struktura i organizacja pracy
+						informatyków
+					</option>
+					<option
+						value="Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania informacji"
+					>
+						Struktura organizacyjna przedsiębiorstwa i elementy
+						przetwarzania informacji
+					</option>
+					<option
+						value="Konfiguracja sprzętu komputerowego i oprogramowania"
+						>
+						Konfiguracja sprzętu komputerowego i oprogramowania
+					</option>
+					</optgroup>
+					<optgroup
+					label="Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego"
+					>
+					Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego
+					<option value="Montaż sprzętu komputerowego">
+						Montaż sprzętu komputerowego
+					</option>
+					<option value="Naprawa  sprzętu komputerowego">
+						Naprawa sprzętu komputerowego
+					</option>
+					<option value="Konserwacja i obsługa sprzętu komputerowego">
+						Konserwacja i obsługa sprzętu komputerowego
+					</option>
+					</optgroup>
+					<optgroup label="Systemy informatyczne">
+					Systemy informatyczne
+					<option
+						value="Zasady administrowania systemami informatycznymi i archiwizowania danych"
+					>
+						Zasady administrowania systemami informatycznymi i
+						archiwizowania danych
+					</option>
+					<option
+						value="Dokumentacja technologiczna przetwarzania informacj"
+					>
+						Dokumentacja technologiczna przetwarzania informacj
+					</option>
+					<option value="Biblioteki oprogramowania i zbiorów danych">
+						Biblioteki oprogramowania i zbiorów danych
+					</option>
+					<option
+						value="Zapoznanie z programami do administracji lokalnymi sieciami komputerowymi"
+					>
+						Zapoznanie z programami do administracji lokalnymi sieciami
+						komputerowymi
+					</option>
+					<option
+						value="Obsługa programów używanych w przedsiębiorstwie"
+					>
+						Obsługa programów używanych w przedsiębiorstwie
+					</option>
+					<option
+						value="Komputerowe wspomaganie procesów projektowania"
+					>
+						Komputerowe wspomaganie procesów projektowania
+					</option>
+					<option
+						value="Organizacja, zbieranie i kontrola danych, przetwarzanie i wykorzystywanie wyników"
+					>
+						Organizacja, zbieranie i kontrola danych, przetwarzanie i
+						wykorzystywanie wyników
+					</option>
+					<option
+						value="Elementy procesów projektowania, programowania i uruchamiania programów komputerowych"
+					>
+						Elementy procesów projektowania, programowania i
+						uruchamiania programów komputerowych
+					</option>
+					<option value="Ochrona danych i procesów przetwarzania">
+						Ochrona danych i procesów przetwarzania
+					</option>
+					</optgroup>
+					<optgroup label="Tworzenie aplikacji internetowych">
+					Tworzenie aplikacji internetowych
+					</optgroup>
+					<option
+					value="Konfiguracja serwerów i przeglądarek pod obsługę aplikacji internetowych"
+					>
+					Konfiguracja serwerów i przeglądarek pod obsługę aplikacji
+					internetowych
+					</option>
+					<option value="Struktura witryny internetowej - HTML">
+					Struktura witryny internetowej - HTML
+					</option>
+					<option value="Stylizacja elementów witryny - CSS">
+					Stylizacja elementów witryny - CSS
+					</option>
+					<option value="Programowanie aplikacji internetowych - JS, PHP">
+					Programowanie aplikacji internetowych - JS, PHP
+					</option>
+					<option value="Testowanie aplikacji internetowych">
+					Testowanie aplikacji internetowych
+					</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				Opiekun:
+				<div id="radio">
+				<label for="Marek Rojs"
+					>Marek Rojs:
+					<input
+					type="radio"
+					name="opiekun"
+					value="Marek Rojs"
+					checked
+					/>
+				</label>
+				<label for="robert lewangolski"
+					>robert lewangolski:
+					<input type="radio" name="opiekun" value="robert lewangolski" />
+				</label>
+				<label for="erling haaland"
+					>erling haaland:
+					<input
+					type="radio"
+					name="opiekun"
+					value="erling haaland"
+					/>
+				</label>
+				</div>
+			</div>
+			</fieldset>
+			<fieldset>
+				<div class="dane-praktyk">
+				<legend>Realizacja Materiału</legend>
+				<label id="sprawozdanie-label" for="sprawozdanie"
+					>Sprawozdanie:
+					<textarea name="sprawozdanie" id="sprawozdanie" cols="30" rows="10"></textarea>
+				</label>
+				<div id="obok-siebie">
+					<label for="completed"
+					>Czy zrealizowano:
+					<input type="checkbox" id="completed" value="completed" />
+					</label>
+					<label for="ammount-of-hours"
+					>Liczba Godzin:
+					<input type="number" id="ammount-of-hours" min="1" max="7" />
+					</label>
+				</div>
+				<label for="skill-level"
+					>Opanowanie Materiału: 1
+					<input type="range" id="skill-level" min="1" max="6" step="1" />
+					6
+				</label>
+				</div>
+			</fieldset>
+			<div id="display-dziennik"></div>
+			</fieldset>
+			</div>
+			<div id="buttons">
+				<button id="red-button">Wyczyść</button>
+				<button id="green-button">Dodaj</button>
+			</div>
+		</form>
+		<footer>&copy; Kamil Pohl</footer>
+	</body>
+</html>

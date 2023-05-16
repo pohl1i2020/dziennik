@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>dziennik</title>
+		<link rel="stylesheet" href="main.css" />
+		<script src="glowna.js" defer></script>
+	</head>
+	<body>
+		<header><h1>DZIENNIK PRAKTYKI ZAWODOWEJ</h1></header>
+		<section id="dziennik">
+			<a href="glowna.html"><button id="home">Home</button></a>
+			<a href="Zajecia.html"
+				><button id="dziennik-zajec">Dziennik zajęć</button></a
+			>
+			<a href="Ocena.html"><button id="ocena">Podsumowanie</button></a>
+		</section>
+		<section id="formularz" class="">
+			<form action="#" class="">
+				<div class="input-container">
+					<label for="imie"
+						>Imię: <input type="text" id="imie"
+					/></label>
+					<label for="nazwisko"
+						>Nazwisko: <input type="text" id="nazwisko"
+					/></label>
+					<label for="rok-szkolny"
+						>Rok szkolny: <input type="text" id="rok-szkolny"
+					/></label>
+					<label for="klasa">Klasa: <input type="text" id="klasa" /></label>
+					<label for="firma"
+						>Odbytej w: <input type="text" id="firma"
+					/></label>
+				</div>
+				<fieldset id="czas-trwania">
+					<legend>Czas trwania</legend>
+					<label for="start-date"
+						>Data rozpoczęcia <input type="date" id="start-date"
+					/></label>
+					<label for="end-date"
+						>Data zakończenia <input type="date" id="end-date"
+					/></label>
+				</fieldset>
+				<div id="confirm"><button>Zatwierdź</button></div>
+			</form>
+		</section>
+		<section id="logbook" class="logbook" class="hidden">
+			<button id="edit-button" class="hidden">Edit</button>
+		</section>
+		<footer>&copy; Kamil Pohl</footer>
+	</body>
+</html>
